@@ -1,0 +1,54 @@
+/* *********************NAVIGATION BAR********************************* */
+
+#navbar {
+    flex-direction: column;
+}
+
+#logo img {
+    width: 4.5vw;
+}
+
+#navbar ul li a {
+    font-size: 2.3vw;
+}
+
+
+/* **********************SERVICES SECTION******************************************* */
+
+.box {
+    padding: 2vw;
+}
+
+
+/* *******************CONTACT FORM **************************************** */
+
+.form-div label {
+    font-size: 2.4vw;
+}
+
+#contact-form form div input {
+    font-size: 2vw;
+}
+
+
+/* ************************UTILITY CLASS******************************** */
+
+footer {
+    font-size: 2vw;
+}
+
+.btn-primary {
+    font-size: 1.5vw;
+}
+
+.h-primary {
+    font-size: 4.5vw;
+}
+
+.p-primary {
+    font-size: 1.5vw;
+}
+
+.h2-primary {
+    font-size: 3vw;
+}

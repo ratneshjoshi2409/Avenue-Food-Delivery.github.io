@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Londrina+Solid&family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* ***************************CSS RESET***************************** */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* *******************CSS VARIABLE************************************************ */
+
+:root {
+    --navbar-height: 70px;
+}
+
+
+/* *********************NAVIGATION BAR********************************* */
+
+#navbar {
+    /* border: 2px solid red; */
+    padding: 0.6vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100px;
+    z-index: -1;
+}
+
+#logo img {
+    width: 3.5vw;
+    border-radius: 30px;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar ul li {
+    list-style: none;
+    margin: 1vw 2vw;
+}
+
+#navbar ul li a {
+    color: white;
+    padding: 0.3vw 1vw;
+    text-decoration: none;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bolder;
+    font-size: 1.3vw;
+}
+
+#navbar ul li a:hover {
+    color: sandybrown;
+    background-color: slategrey;
+    border-radius: 10px;
+}
+
+
+/* **********************HOME ********************************************** */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+    justify-content: center;
+    align-items: center;
+    height: 660px;
+}
+
+#home::before {
+    content: "";
+    background: url("../img/home/bg-home.jpg") no-repeat center center/cover;
+    z-index: -1;
+    height: 690px;
+    width: 100vw;
+    position: absolute;
+    top: 35px;
+    /* opacity: 0.9; */
+}
+
+.home-h1 {
+    background-color: black;
+    color: white;
+    margin: 2vw;
+    padding: 0.8vw;
+    border-radius: 30px;
+    /* border: 1px solid white; */
+    box-shadow: 3px 3px white;
+}
+
+.home-p {
+    /* border: 1px solid white; */
+    box-shadow: 3px 3px white;
+    background-color: black;
+    color: white;
+    margin: 2vw;
+    padding: 0.8vw;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.home-p-1 {
+    width: 50vw;
+}
+
+.home-p-2 {
+    width: 30vw;
+}
+
+
+/* **********************SERVICES SECTION******************************************* */
+
+#services-container {
+    /* border: 3px solid blue; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    padding: 3vw;
+    position: relative;
+    top: 10px;
+    margin: 1vw;
+    color: black;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box {
+    border: 1px solid red;
+    background-color: rgb(231, 226, 226);
+    margin: 2vw;
+    padding: 1vw;
+    border-radius: 35px;
+}
+
+.box img {
+    width: 12vw;
+    display: block;
+    margin: auto;
+}
+
+.box-3 img {
+    width: 8vw;
+    padding: 2vw;
+}
+
+
+/* .services-container h1 {
+    margin-bottom: 50px;
+} */
+
+
+/* ************************CLEINT SECTION************************************* */
+
+#client-section {
+    /* border: 3px solid navy; */
+    position: relative;
+    top: 50px;
+}
+
+#client-section::before {
+    content: "";
+    background: url("../img/client/bg-client.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    height: 333px;
+    width: 100vw;
+    z-index: -2;
+    opacity: 0.4;
+}
+
+#client-section h1 {
+    margin-bottom: 56px;
+}
+
+#client {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 3px solid yellow; */
+}
+
+.client-item img {
+    width: 7vw;
+}
+
+
+/* .client-section h1 {
+    margin-bottom: 50px;
+} */
+
+
+/* *******************CONTACT FORM **************************************** */
+
+#contact-form {
+    position: relative;
+    top: 103px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    height: 817px;
+}
+
+#contact-form h1 {
+    margin: 3vw;
+}
+
+#contact-form::before {
+    content: "";
+    background: url("../img/contact/contact\ us.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 800px;
+    width: 100vw;
+    z-index: -1;
+    /* opacity: 0.7; */
+    top: 14px;
+}
+
+#contact-form form {
+    display: flex;
+    /* border: 3px solid blue; */
+    padding: 2vw;
+    border-radius: 23px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-div label {
+    font-size: 1.4vw;
+}
+
+.form-div {
+    display: flex;
+    flex-direction: column;
+    margin: 1vw;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-form form div input {
+    text-align: center;
+    padding: 5px;
+    width: 40%;
+    border-radius: 20px;
+    font-size: 1vw;
+    border: 3px solid black;
+}
+
+#contact-form form div textarea {
+    border-radius: 20px;
+    width: 40%;
+    border: 3px solid black;
+}
+
+
+/* *******************FOOTER************************************************ */
+
+footer {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0px;
+    height: 30px;
+    width: 100vw;
+    text-align: center;
+    background-color: black;
+    font-size: 1vw;
+    color: white;
+}
+
+
+/* ************************UTILITY CLASS******************************** */
+
+.btn-primary {
+    padding: 0.3vw 1vw;
+    margin: 1.3vw 1vw;
+    cursor: pointer;
+    width: 20vw;
+    border-radius: 20px;
+    font-size: 1vw;
+    border: none;
+    font-weight: bolder;
+}
+
+.btn-primary:hover {
+    color: white;
+    background-color: slategrey;
+}
+
+.p-primary {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1vw;
+}
+
+.h-primary {
+    font-size: 3.5vw;
+    font-family: 'Bree Serif', serif;
+    /* font-family: 'Times New Roman', Times, serif; */
+    letter-spacing: 2px;
+}
+
+.h2-primary {
+    font-size: 2vw;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.center {
+    text-align: center;
+    /* margin-bottom: 10px; */
+}
